@@ -4,7 +4,7 @@ export default function Header({ totalSales, isDark, onToggleTheme }) {
       <div className="flex justify-between items-start w-full md:w-auto">
         <div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Panel de Pedidos</h1>
-          <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm sm:text-base font-medium">Gestioná tus pedidos de WhatsApp e Instagram en segundos</p>
+          <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm sm:text-base font-medium">Gestiona las entregas y ventas de tu negocio</p>
         </div>
         
         {/* Toggle Móvil */}

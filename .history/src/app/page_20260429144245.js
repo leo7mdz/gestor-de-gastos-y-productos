@@ -20,13 +20,9 @@ export default function Dashboard() {
 
   const { isDark, toggleDarkMode, isMounted: themeMounted } = useDarkMode();
 
-  console.log('Orders Mounted:', ordersMounted);
-console.log('Theme Mounted:', themeMounted);
-if (!ordersMounted || !themeMounted) return null;
+  if (!ordersMounted || !themeMounted) return null;
 
-  console.log('Orders:', orders);
-const totalSales = orders.reduce((total, order) => total + order.price, 0);
-console.log('Total Sales:', totalSales);
+  const totalSales = orders.reduce((total, order) => total + order.price, 0);
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans selection:bg-indigo-100 selection:text-indigo-900 transition-colors duration-200">
